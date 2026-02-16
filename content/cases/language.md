@@ -40,6 +40,22 @@ macro constants | constant
 enum labels | constant
 macros | constant or flat
 
+## C++
+
+Google style guide: https://google.github.io/styleguide/cppguide.html
+
+feature | case
+--- | ---
+files | snake or kebab or flat
+types | Pascal
+concepts | Pascal
+variables | snake
+constants | camel (Pascal with prefix)
+functions | Pascal
+namespace | snake
+enum variants | camel (Pascal with prefix)
+macros | constant
+
 ## C#
 
 Microsoft: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names
@@ -61,6 +77,28 @@ private members | camel
 feature | case
 --- | ---
 identifiers | kebab
+
+## Dart
+
+Effective dart: https://dart.dev/effective-dart/style
+
+feature | case
+--- | ---
+classes | Pascal
+enums | Pascal
+typedefs | Pascal
+type parameters | Pascal
+extensions | Pascal
+packages | snake
+files | snake
+directories | snake
+import prefixes | snake
+members | camel
+variables | camel
+named parameters | camel
+constants | camel or constant
+
+Dart has a similar ruling on acronyms like Kotlin: https://dart.dev/effective-dart/style#do-capitalize-acronyms-and-abbreviations-longer-than-two-letters-like-words
 
 ## Go
 
@@ -113,6 +151,27 @@ parameters | camel
 local variables | camel
 template paramaters | upper flat
 
+## Kotlin
+
+Kotlin coding conventions: https://kotlinlang.org/docs/coding-conventions.html#naming-rules
+
+feature | case
+--- | ---
+packages | camel (single word prefered)
+classes | Pascal
+objects | Pascal
+functions | camel
+test methods | [no case?](https://kotlinlang.org/docs/coding-conventions.html#names-for-test-methods)
+constants | constant
+mutable collections | camel
+singletons | Pascal
+enum variants | constant or Pascal
+
+The docs explicitly make a rule about when you capitalize acronyms.  Two letters are an exception.
+
+> When using an acronym as part of a declaration name, follow these rules:
+> * For two-letter acronyms, use uppercase for both letters. For example, IOStream.
+> * For acronyms longer than two letters, capitalize only the first letter. For example, XmlFormatter or HttpInputStream.
 
 ## Lisp
 
@@ -124,6 +183,38 @@ feature | case
 --- | ---
 identifiers | kebab
 files | kebab
+
+## Lua
+
+[Lua Style Guide from LuaRocks, a lua package manager](https://github.com/luarocks/lua-style-guide)
+
+feature | case
+--- | ---
+variables | snake
+functions | snake
+classes | Pascal
+methods | snake
+constants | constant
+
+It should be noted that the standard library uses flat case for functions.
+
+## .NET (and VBA)
+
+[Capitalization Conventions from Microsoft](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/capitalization-conventions#capitalization-rules-for-identifiers)
+
+feature | case
+--- | ---
+namespaces | Pascal
+types | Pascal
+interfaces | Pascal
+methods | Pascal
+properties | Pascal
+events | Pascal
+fields | Pascal
+enum variants | Pascal
+parameters | camel
+
+Also suggests the 2 letter capitalization convention.
 
 ## Nim
 
@@ -193,6 +284,27 @@ arguments | snake
 methods | snake
 constants | constant
 
+## PowerShell
+
+[Poshcode unofficial style guide](https://poshcode.gitbook.io/powershell-practice-and-style)
+
+feature | case
+--- | ---
+identifiers | Pascal
+
+
+[Strongly Encouraged Development Guidelines from Microsoft](https://learn.microsoft.com/en-us/powershell/scripting/developer/cmdlet/strongly-encouraged-development-guidelines?view=powershell-7.4)
+looks to be specifically about developing cmdlets.
+
+feature | case
+--- | ---
+cmdlet | train
+verbs | Pascal
+nouns | Pascal
+parameters | Pascal
+
+Microsoft capitalizes Pascal.
+
 ## R
 
 This looks the most official, given that google forked it: https://style.tidyverse.org/
@@ -255,6 +367,16 @@ constants | camel
 type parameters | Pascal
 annotations | camel
 
+## SQL
+
+They bought the domain: https://www.sqlstyle.guide/
+
+feature | case
+--- | ---
+tables | snake
+columns | snake
+keywords | constant
+
 ## Standard ML
 
 This person already wrote an excellent article doing this exact thing, by looking at 8 sources of style guides: https://thebreakfastpost.com/2016/06/11/naming-conventions-in-standard-ml/
@@ -271,6 +393,16 @@ structure | Pascal
 signature | constant
 functor | Pascal
 files | kebab
+
+## Swift 
+
+Swift API design guidelines: https://www.swift.org/documentation/api-design-guidelines/
+
+feature | case
+--- | ---
+types | Pascal
+protocols | Pascal
+identifiers | camel
 
 ## TypeScript
 
