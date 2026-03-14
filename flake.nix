@@ -42,6 +42,8 @@
         shellHook = ''
           mkdir -p themes
           ln -sfn ${hextra} themes/hextra
+          mkdir -p assets/js/vendor
+          ln -sfn ${flexsearch} assets/js/vendor/flexsearch.bundle.min.js
         '';
       };
   };
