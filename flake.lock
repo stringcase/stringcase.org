@@ -1,12 +1,40 @@
 {
   "nodes": {
+    "flexsearch": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-eQ/LF5YQHEd97Q9u82dPHsaQ66gN22ZvQ4Tlv7Y9WCQ=",
+        "type": "file",
+        "url": "https://cdn.jsdelivr.net/npm/flexsearch@0.8.143/dist/flexsearch.bundle.min.js"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://cdn.jsdelivr.net/npm/flexsearch@0.8.143/dist/flexsearch.bundle.min.js"
+      }
+    },
+    "hextra": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1773050118,
+        "narHash": "sha256-lEqDYnd6WdKIftpLHG9s53/Dz9y6ZVp2QhoKukG1vKw=",
+        "owner": "imfing",
+        "repo": "hextra",
+        "rev": "339a2cebbe7e6a323c9509ca14e4470d00883fa2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "imfing",
+        "repo": "hextra",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1725983898,
-        "narHash": "sha256-4b3A9zPpxAxLnkF9MawJNHDtOOl6ruL0r6Og1TEDGCE=",
+        "lastModified": 1773282481,
+        "narHash": "sha256-b/GV2ysM8mKHhinse2wz+uP37epUrSE+sAKXy/xvBY4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "1355a0cbfeac61d785b7183c0caaec1f97361b43",
+        "rev": "fe416aaedd397cacb33a610b33d60ff2b431b127",
         "type": "github"
       },
       "original": {
@@ -18,6 +46,8 @@
     },
     "root": {
       "inputs": {
+        "flexsearch": "flexsearch",
+        "hextra": "hextra",
         "nixpkgs": "nixpkgs"
       }
     }

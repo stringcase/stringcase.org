@@ -11,6 +11,9 @@ style = "catppuccin-latte"
 default = "light"
 displayToggle = true
 
+[params.search.flexsearch]
+js = "js/vendor/flexsearch.bundle.min.js"
+
 [[menu.main]]
 name = "Definition"
 pageRef = "/definition"

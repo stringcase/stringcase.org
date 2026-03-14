@@ -1,6 +1,0 @@
-[submodule "themes/doks"]
-	path = themes/doks
-	url = https://github.com/thuliteio/doks
-[submodule "themes/hextra"]
-	path = themes/hextra
-	url = https://github.com/imfing/hextra.git
